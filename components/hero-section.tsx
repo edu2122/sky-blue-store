@@ -11,16 +11,16 @@ export function HeroSection() {
           Compra camisetas seleccionadas del mundial en una sola tienda.
         </h1>
         <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
-          Stock limitado, envios rapidos y solo selecciones clasificadas.
-          Lanza tu pedido hoy y recibe antes del proximo partido.
+          Stock limitado, envios rapidos y solo selecciones clasificadas. Lanza
+          tu pedido hoy y recibe antes del proximo partido.
         </p>
       </div>
-      <div className="flex flex-wrap gap-3">
+      {/* <div className="flex flex-wrap gap-3">
         <Button className="rounded-full px-6">Comprar ahora</Button>
         <Button variant="outline" className="rounded-full px-6">
           Ver tallas
         </Button>
-      </div>
+      </div> */}
     </section>
   )
 }

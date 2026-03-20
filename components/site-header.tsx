@@ -47,14 +47,14 @@ export function SiteHeader({
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted">
             <Image
               src="/sky-blue-shop.svg"
-              alt="Sky Blue Store"
+              alt="Sky Blue Shop VE"
               width={24}
               height={24}
               priority
             />
           </div>
           <div>
-            <p className="text-lg font-semibold">Sky Blue Store</p>
+            <p className="text-lg font-semibold">Sky Blue Shop VE</p>
             <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
               Mundial 2026
             </p>

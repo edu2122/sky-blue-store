@@ -19,9 +19,34 @@ const playfair = Playfair_Display({
   display: 'swap'
 })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://skyblueshopve.vercel.app'
+
 export const metadata: Metadata = {
-  title: 'Sky Blue Store | Camisetas de Futbol',
-  description: 'Tienda de camisetas de futbol con ofertas y novedades.'
+  title: 'Sky Blue Shop VE | Camisetas de Futbol',
+  description: 'Camisetas oficiales del Mundial 2026 con envio rapido.',
+  metadataBase: new URL(siteUrl),
+  applicationName: 'Sky Blue Shop VE',
+  category: 'Ecommerce',
+  alternates: {
+    canonical: '/'
+  },
+  openGraph: {
+    title: 'Sky Blue Shop VE | Camisetas de Futbol',
+    description: 'Camisetas oficiales del Mundial 2026 con envio rapido.',
+    url: siteUrl,
+    siteName: 'Sky Blue Shop VE',
+    locale: 'es_VE',
+    type: 'website'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sky Blue Shop VE | Camisetas de Futbol',
+    description: 'Camisetas oficiales del Mundial 2026 con envio rapido.'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
 }
 
 export default function RootLayout({
@@ -31,8 +56,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      suppressHydrationWarning
+      lang="es"
       className={cn(
         'h-full',
         'antialiased',

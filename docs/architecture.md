@@ -2,7 +2,7 @@
 
 ## Overview
 
-Sky Blue Store is a Next.js App Router project focused on a single product page
+Sky Blue Shop VE is a Next.js App Router project focused on a single product page
 for World Cup shirts. The UI is built with Tailwind v4 and shadcn/ui components.
 Cart state lives in a client-side Zustand store with localStorage persistence.
 

@@ -4,8 +4,7 @@ import { MastercardIcon } from '@/components/icons/mastercard'
 import { PayPalIcon } from '@/components/icons/paypal'
 import { VenezuelaFlagIcon } from '@/components/icons/venezuela-flag'
 import { WhatsAppIcon } from '@/components/icons/whatsapp'
-import { InstagramIcon } from './icons/instagram'
-
+import { InstagramIcon } from '@/components/icons/instagram'
 import type { PaymentBadge } from '@/lib/site-data'
 
 type SiteFooterProps = {
@@ -54,14 +53,12 @@ export function SiteFooter({ paymentBadges }: SiteFooterProps) {
           </div>
         </div>
         <div className="flex flex-col items-center gap-1 text-xs text-muted-foreground">
-          <span>© 2026 Sky Blue Store. Todos los derechos reservados.</span>
+          <span>© 2026 Sky Blue Shop VE. Todos los derechos reservados.</span>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <span>
-              {' '}
               <WhatsAppIcon className="inline h-4 w-auto" /> +58 414-3323040
             </span>
             <span>
-              {' '}
               <InstagramIcon className="inline h-4 w-auto" /> @skyblueshopve
             </span>
           </div>

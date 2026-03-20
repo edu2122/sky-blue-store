@@ -46,7 +46,7 @@ export function ProductGrid({
   return (
     <section className="flex flex-col gap-6" id="catalogo">
       <div className="flex items-center justify-between">
-        <h2 className="font-(--font-playfair) text-2xl text-balance">
+        <h2 className="font-[var(--font-playfair)] text-2xl text-balance">
           Camisetas del mundial
         </h2>
         <span className="text-sm font-semibold text-muted-foreground">
@@ -54,7 +54,7 @@ export function ProductGrid({
         </span>
       </div>
       <div className="grid gap-6 md:grid-cols-2 ">
-        {products.map((item) => {
+        {products.map((item, index) => {
           const selectedSize = sizesById[item.id] ?? item.size
           const cartId = `${item.id}-${selectedSize}`
 
@@ -80,9 +80,9 @@ export function ProductGrid({
                     alt={item.name}
                     width={280}
                     height={280}
-                    className="h-56 w-56 object-contain transition-all duration-300 hover:scale-125"
+                    className="h-56 w-56 object-contain transition-transform duration-300 hover:scale-110 motion-reduce:transition-none motion-reduce:transform-none"
                     sizes="(max-width: 768px) 80vw, 280px"
-                    priority
+                    priority={index === 0}
                   />
                 </div>
               </CardContent>
@@ -116,6 +116,7 @@ export function ProductGrid({
                   <div className="flex items-center gap-2 text-xs text-muted-foreground">
                     <span>Talla</span>
                     <select
+                      aria-label="Selecciona tu talla"
                       className="rounded-full border border-border bg-background px-2 py-1 text-xs"
                       value={selectedSize}
                       onChange={(event) =>
