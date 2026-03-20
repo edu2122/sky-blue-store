@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import { Badge } from '@/components/ui/badge'
 import { BinanceIcon } from '@/components/icons/binance'
 import { MastercardIcon } from '@/components/icons/mastercard'
@@ -16,6 +18,15 @@ export function SiteFooter({ paymentBadges }: SiteFooterProps) {
     <footer className="border-t border-border bg-card">
       <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-4 px-6 py-8 text-center">
         <div className="flex max-w-2xl flex-col items-center gap-2">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted">
+            <Image
+              src="/sky-blue-shop.svg"
+              alt="Sky Blue Shop VE"
+              width={28}
+              height={28}
+              className="h-7 w-7"
+            />
+          </div>
           <p className="text-sm font-semibold">Metodos de pago</p>
           <p className="text-xs text-muted-foreground">
             Pagos en USD y bolivares. Confirmamos disponibilidad por WhatsApp o
