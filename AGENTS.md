@@ -102,7 +102,7 @@ Use pnpm for scripts and installs.
 
 - If you add new remote image domains, update `next.config.ts`.
 - If you add new shadcn components, use the CLI:
-  - `pnpm dlx shadcn@latest add <component>`
+- `pnpm dlx shadcn@latest add <component>`
 
 ## Docs
 

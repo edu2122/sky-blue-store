@@ -19,7 +19,8 @@ const playfair = Playfair_Display({
   display: 'swap'
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://skyblueshopve.vercel.app'
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://sky-blue-store.vercel.app'
 
 export const metadata: Metadata = {
   title: 'Sky Blue Shop VE | Camisetas de Futbol',

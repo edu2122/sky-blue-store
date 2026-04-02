@@ -62,7 +62,9 @@ export default function Home() {
         <ProductGrid
           products={PRODUCTS}
           instagramUrl={INSTAGRAM_URL}
-          buildWhatsAppUrl={(message) => buildWhatsAppUrl(WHATSAPP_PHONE, message)}
+          buildWhatsAppUrl={(message) =>
+            buildWhatsAppUrl(WHATSAPP_PHONE, message)
+          }
           buildItemMessage={buildItemMessage}
           sizesById={sizesById}
           onSizeChange={(id, size) =>
